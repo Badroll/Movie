@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.rpl2016_11.movie.MainActivity">
+    <item
+        android:id="@+id/logout"
+        android:title="Log Out"
+        app:showAsAction="never"
+        android:onClick="logout"/>
+</menu>

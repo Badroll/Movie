@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/pict"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_toRightOf="@+id/pict"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_above="@+id/cardview_desc"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:text="title"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="22sp" />
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="#000"
+                    android:text="date"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="22sp"/>
+                <TextView
+                    android:id="@+id/popularity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="#000"
+                    android:text="popularity"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="22sp"/>
+
+                <TextView
+                    android:id="@+id/language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="#000"
+                    android:text="language"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="22sp"/>
+
+                <TextView
+                    android:id="@+id/rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="rate"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="22sp"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview_desc"
+            android:layout_below="@+id/pict"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark">
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="acasc"
+                android:textColor="#000"
+                android:textSize="22sp"
+                android:padding="10dp"
+                android:fontFamily="sans-serif-condensed"/>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</LinearLayout>
